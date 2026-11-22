@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.MakeEmFallWiki" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/azul_noche</item>
+        <item name="android:statusBarColor">@color/azul_noche</item>
+        <item name="android:navigationBarColor">@color/azul_noche</item>
+    </style>
+</resources>
