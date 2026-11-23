@@ -134,7 +134,7 @@ Tiene 6 listas, una por sección:
 |---|---|
 | `historia` | `id`, `titulo`, `texto`, `imagen` |
 | `personajes` | `id`, `nombre`, `rol`, `estiloPelea`, `descripcion`, `apariencia`, `edad`, `peso`, `velocidad`, `vida`, `imagen`, `imagenPanel` |
-| `enemigos` | `id`, `nombre`, `tipo` (Normal / Élite / Jefe), `piso`, `descripcion`, `habilidades`, `vida`, `imagen` |
+| `enemigos` | `id`, `nombre`, `tipo` (Normal / Élite / Jefe), `piso`, `descripcion`, `habilidades`, `vida`, `imagen`, `imagenPanel` |
 | `boons` | `id`, `nombre`, `tipo`, `elemento`, `rareza`, `descripcion` (nivel 1), `nivelMaximo` (nivel 5), `imagen` |
 | `mecanicas` | `id`, `nombre`, `categoria`, `descripcion`, `imagen` |
 | `controles` | `id`, `accion`, `teclado`, `mando`, `categoria`, `descripcion` |
@@ -162,7 +162,7 @@ Tiene 6 listas, una por sección:
 
 ## 6. Imágenes
 
-Todas están en **`app/src/main/res/drawable-nodpi/`** (formato `.webp`).
+Todas están en **`app/src/main/res/drawable-nodpi/`**. Los renders de personajes y enemigos son `.png` (los genera `otros/Art/wiki/build.py`); el resto son `.webp`.
 
 | Nombre del archivo | Dónde se usa |
 |---|---|
@@ -174,6 +174,8 @@ Todas están en **`app/src/main/res/drawable-nodpi/`** (formato `.webp`).
 | `personaje_<nombre>` | Miniatura del personaje en la lista (retrato cuadrado) |
 | `personaje_<nombre>_render` | Imagen grande en el detalle (cuerpo completo) |
 | `personaje_niko_panel`, `personaje_mateo_panel` | Pósters del inicio y detalle de Niko y Mateo |
+| `enemigo_<id>_mini` | Miniatura del enemigo en la lista |
+| `enemigo_<id>` | Render de cuerpo completo en el detalle (`imagenPanel`); `enemigo_bigdata` también es el de Mr. Big Data en Personajes |
 | `captura_combate` | Imagen de Historia y de la mecánica "Daño por porcentaje" |
 | `mipmap-*/ic_launcher.png` | Ícono de la app en el celular |
 
@@ -184,7 +186,7 @@ Todas están en **`app/src/main/res/drawable-nodpi/`** (formato `.webp`).
 
 También se puede usar `imagenUrl` con la URL de una imagen en internet. La lógica que decide qué imagen mostrar está en `ImagenWiki` (`ui/components/Componentes.kt`); si no encuentra ninguna, muestra el ícono de la sección.
 
-Los boons y Craub se dibujan **sin suavizado** (pixel art). Eso se controla con `pixelado` en `data/model/WikiEntry.kt`.
+Los boons se dibujan **sin suavizado** (pixel art). Eso se controla con `pixelado` en `data/model/WikiEntry.kt`.
 
 ---
 

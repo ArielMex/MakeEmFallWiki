@@ -52,7 +52,6 @@ fun WikiResponse.entradas(seccion: Seccion): List<WikiEntry> = when (seccion) {
                 it.apariencia.siHay("Apariencia"),
             ),
             lista = it.habilidades,
-            pixelado = it.id == "craub",
         )
     }
     Seccion.ENEMIGOS -> enemigos.map {
@@ -60,7 +59,7 @@ fun WikiResponse.entradas(seccion: Seccion): List<WikiEntry> = when (seccion) {
             id = it.id, seccion = seccion, titulo = it.nombre,
             subtitulo = listOf(it.tipo, it.piso).filter(String::isNotBlank).joinToString(" · "),
             descripcion = it.descripcion, etiqueta = it.tipo,
-            imagen = it.imagen, imagenUrl = it.imagenUrl,
+            imagen = it.imagen, imagenGrande = it.imagenPanel, imagenUrl = it.imagenUrl,
             detalles = listOfNotNull(
                 it.tipo.siHay("Tipo"),
                 it.piso.siHay("Aparece desde"),

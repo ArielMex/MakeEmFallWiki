@@ -102,12 +102,12 @@
       "rol": "Jefe · CEO de Nuddle",
       "estiloPelea": "Armadura robótica",
       "descripcion": "CEO de Nuddle y jefe final. Representa al rico al que le sobra el dinero a costa de los demás; su apodo se burla de su tamaño y del negocio de su empresa, que acumula los datos de todo el mundo. Sin sus robots, armaduras y guardias no tiene fuerza propia.",
-      "imagen": null,
+      "imagen": "enemigo_bigdata_mini",
       "imagenUrl": null,
       "apariencia": "Gordo, pelón y velludo.",
       "peso": 400,
       "velocidad": 1.5,
-      "imagenPanel": null,
+      "imagenPanel": "enemigo_bigdata",
       "vida": 450
     }
   ],
@@ -122,7 +122,8 @@
         "Ataque cuerpo a cuerpo"
       ],
       "vida": null,
-      "imagen": null,
+      "imagen": "enemigo_guardia_mini",
+      "imagenPanel": "enemigo_guardia",
       "imagenUrl": null
     },
     {
@@ -136,7 +137,8 @@
         "Contraataque con agarre"
       ],
       "vida": null,
-      "imagen": null,
+      "imagen": "enemigo_antidisturbios_mini",
+      "imagenPanel": "enemigo_antidisturbios",
       "imagenUrl": null
     },
     {
@@ -150,7 +152,8 @@
         "Contraataque con agarre"
       ],
       "vida": null,
-      "imagen": null,
+      "imagen": "enemigo_antidisturbios_porra_mini",
+      "imagenPanel": "enemigo_antidisturbios_porra",
       "imagenUrl": null
     },
     {
@@ -163,7 +166,8 @@
         "Láser cargado"
       ],
       "vida": null,
-      "imagen": null,
+      "imagen": "enemigo_dron_mini",
+      "imagenPanel": "enemigo_dron",
       "imagenUrl": null
     },
     {
@@ -176,7 +180,8 @@
         "Embestida explosiva"
       ],
       "vida": null,
-      "imagen": null,
+      "imagen": "enemigo_dron_kamikaze_mini",
+      "imagenPanel": "enemigo_dron_kamikaze",
       "imagenUrl": null
     },
     {
@@ -190,7 +195,8 @@
         "Golpe pesado"
       ],
       "vida": null,
-      "imagen": null,
+      "imagen": "enemigo_guardia_pesado_mini",
+      "imagenPanel": "enemigo_guardia_pesado",
       "imagenUrl": null
     },
     {
@@ -205,7 +211,8 @@
         "Lanzamisiles"
       ],
       "vida": 450,
-      "imagen": null,
+      "imagen": "enemigo_bigdata_mini",
+      "imagenPanel": "enemigo_bigdata",
       "imagenUrl": null
     }
   ],

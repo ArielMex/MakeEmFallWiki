@@ -60,6 +60,7 @@ data class Enemigo(
     val piso: String = "",
     val habilidades: List<String> = emptyList(),
     val imagen: String? = null,
+    val imagenPanel: String? = null,
     val imagenUrl: String? = null,
 )
 
