@@ -17,7 +17,7 @@ android {
         versionName = "1.0"
 
         // URL base de la API (debe terminar en "/"). Ver README.md
-        buildConfigField("String", "API_BASE_URL", "\"https://raw.githubusercontent.com/ArielMex/makeemfall-api/refs/heads/main/api/\"")
+        buildConfigField("String", "API_BASE_URL", "\"https://raw.githubusercontent.com/ArielMex/MakeEmFallWiki/refs/heads/main/api/\"")
     }
 
     buildTypes {
